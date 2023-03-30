@@ -21,15 +21,6 @@ var (
 	digitSlice  = strings.Split(digits, "")
 )
 
-//func mapToSlice(mapObject map[string]int) []string {
-//	sliceObj := make([]string, 0, len(mapObject))
-//	for obj, _ := range mapObject {
-//		sliceObj = append(sliceObj, obj)
-//	}
-//
-//	return sliceObj
-//}
-
 func Reverse(s string) string {
 	runes := []rune(s)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
